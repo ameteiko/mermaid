@@ -4,10 +4,12 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.14.0/mermaid.min.js"></script>
     </head>
     <script>
-        var onNodeClick = function(){
-	    console.log(123);
-            alert('A callback was triggered');
-        }
+        var testTypes = function(){
+		parent.content.location.href="test-types.html"
+	}
+        var testLevels = function(){
+		parent.content.location.href="test-levels.html"
+	}
     </script>	
 <body>
 	
@@ -15,8 +17,8 @@
 
 <div class="mermaid">graph TB
 a1-->a2;
-click a1 function(){parent.content.location.href="test-types.html"} "Test types"
-click a2 function(){parent.content.location.href="test-levels.html"} "Test levels"
+click a1 testTypes "Test types"
+click a2 testLevels "Test levels"
 </div>
 	
 </body>
