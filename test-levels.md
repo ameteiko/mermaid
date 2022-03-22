@@ -1,7 +1,3 @@
----
-layout: default
-title: Test levels
----
 # Test levels
 
  1. Unit
