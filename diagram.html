@@ -5,12 +5,10 @@
     </head>
 	 
 <body>
- <pre><code class="language-mermaid">graph LR
-A--&gt;B
-</code></pre>
 
 <div class="mermaid">graph LR
-A--&gt;B
+A-->B
+click A callback "Tooltip"
 </div>
 	
 </body>
@@ -25,6 +23,12 @@ var config = {
 };
 mermaid.initialize(config);
 window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+	
+<script>
+    var callback = function(){
+        alert('A callback was triggered');
+    }
 </script>
 
 </html>
